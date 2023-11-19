@@ -1,0 +1,155 @@
+title: "Outer Edges"
+artist: "Noisia"
+genre: "DnB"
+year: 2016
+coverResId: "ic_launcher_background"
+tracks:
+  - name: "The Approach"
+    length: "1:29"
+    artists: ["Noisia"]
+  - name: "Anomaly"
+    length: "4:03"
+    artists: [ "Noisia" ]
+  - name: "Collider"
+    length: "4:46"
+    artists: [ "Noisia" ]
+  - name: "Vigilantes"
+    length: "2:47"
+    artists: [ "Noisia" ]
+  - name: "Tentacles"
+    length: "3:11"
+    artists: [ "Noisia" ]
+  - name: "Voodoo"
+    length: "3:15"
+    artists: [ "Noisia" ]
+  - name: "Mantra"
+    length: "3:48"
+    artists: [ "Noisia" ]
+  - name: "Surfaceless"
+    length: "1:39"
+    artists: [ "Noisia" ]
+  - name: "Straight Hook"
+    length: "3:23"
+    artists: [ "Noisia" ]
+  - name: "Stonewalled"
+    length: "3:38"
+    artists: [ "Noisia" ]
+  - name: "Motion Blur"
+    length: "3:24"
+    artists: [ "Noisia" ]
+  - name: "The Entangled"
+    length: "3:15"
+    artists: [ "Noisia" ]
+  - name: "Exavolt"
+    length: "3:01"
+    artists: [ "Noisia" ]
+  - name: "Into Dust"
+    length: "4:19"
+    artists: [ "Noisia" ]
+  - name: "Miniatures"
+    length: "2:53"
+    artists: [ "Noisia" ]
+  - name: "Sinkhole"
+    length: "3:29"
+    artists: [ "Noisia" ]
+  - name: "Get Deaded"
+    length: "3:57"
+    artists: [ "Noisia" ]
+  - name: "The Approach (Reprise)"
+    length: "1:59"
+    artists: [ "Noisia" ]
+---
+title: "Letter from Home"
+artist: "Pat Metheny Group"
+genre: "Jazz / Fusion"
+year: 1989
+coverResId: "ic_launcher_background"
+tracks:
+  - name: "Have You Heard"
+    length: "6:25"
+    artists: ["Pat Metheny Group"]
+  - name: "Every Summer Night"
+    length: "7:13"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Better Days Ahead"
+    length: "3:02"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Spring Ain't Here"
+    length: "6:54"
+    artists: [ "Pat Metheny Group" ]
+  - name: "45/8"
+    length: "0:55"
+    artists: [ "Pat Metheny Group" ]
+  - name: "5-5-7"
+    length: "7:54"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Beat 70"
+    length: "4:52"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Dream of the Return"
+    length: "5:25"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Are We There Yet"
+    length: "7:55"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Vidala"
+    length: "3:03"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Slip Away"
+    length: "5:23"
+    artists: [ "Pat Metheny Group" ]
+  - name: "Letter From Home"
+    length: "2:33"
+    artists: [ "Pat Metheny Group" ]
+---
+title: "Toxicity"
+artist: "System of a Down"
+genre: "Alternative Metal"
+year: 2001
+coverResId: "ic_launcher_background"
+tracks:
+  - name: "Prison Song"
+    length: "3:21"
+    artists: [ "System of a Down" ]
+  - name: "Needles"
+    length: "3:13"
+    artists: [ "System of a Down" ]
+  - name: "Deer Dance"
+    length: "2:54"
+    artists: [ "System of a Down" ]
+  - name: "Jet Pilot"
+    length: "2:06"
+    artists: [ "System of a Down" ]
+  - name: "X"
+    length: "1:58"
+    artists: [ "System of a Down" ]
+  - name: "Chop Suey!"
+    length: "3:30"
+    artists: [ "System of a Down" ]
+  - name: "Bounce"
+    length: "1:54"
+    artists: [ "System of a Down" ]
+  - name: "Forest"
+    length: "4:00"
+    artists: [ "System of a Down" ]
+  - name: "ATWA"
+    length: "2:56"
+    artists: [ "System of a Down" ]
+  - name: "Science"
+    length: "2:42"
+    artists: [ "System of a Down" ]
+  - name: "Shimmy"
+    length: "1:50"
+    artists: [ "System of a Down" ]
+  - name: "Toxicity"
+    length: "3:38"
+    artists: [ "System of a Down" ]
+  - name: "Psycho"
+    length: "3:45"
+    artists: [ "System of a Down" ]
+  - name: "Aerials"
+    length: "3:55"
+    artists: [ "System of a Down" ]
+  - name: "Arto"
+    length: "2:13"
+    artists: [ "System of a Down" ]
