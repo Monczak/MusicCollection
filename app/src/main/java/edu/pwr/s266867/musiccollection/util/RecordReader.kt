@@ -8,17 +8,30 @@ import edu.pwr.s266867.musiccollection.musicdata.MusicTrack
 import org.yaml.snakeyaml.Yaml
 
 object RecordReader {
+    private lateinit var records: Map<Int, MusicRecord>
+
+    fun readRecords(context: Context): Map<Int, MusicRecord> {
+        records = readRecordsFromYaml(context)
+        return records
+    }
+
+    fun getRecordById(id: Int): MusicRecord? {
+        return records[id]
+    }
+
     @SuppressLint("DiscouragedApi")
-    fun readRecordsFromYaml(context: Context): List<MusicRecord> {
+    fun readRecordsFromYaml(context: Context): Map<Int, MusicRecord> {
         val yamlFile = context.resources.openRawResource(R.raw.record_data)
             .bufferedReader().use { it.readText() }
 
         val yaml = Yaml()
-        val records = mutableListOf<MusicRecord>()
+        val records = mutableMapOf<Int, MusicRecord>()
 
+        var id = 0
         yaml.loadAll(yamlFile).forEach { data ->
-            val record = parseMusicRecordData(data, context)
-            records.add(record)
+            val record = parseMusicRecordData(data, context, id)
+            records[id] = record
+            id++
         }
 
         return records
@@ -26,7 +39,8 @@ object RecordReader {
 
     private fun parseMusicRecordData(
         data: Any?,
-        context: Context
+        context: Context,
+        id: Int
     ): MusicRecord {
         val recordData = data as Map<*, *>
         val title = recordData["title"] as String
@@ -42,6 +56,7 @@ object RecordReader {
         }
 
         return MusicRecord(
+            id,
             title,
             artist,
             genre,
