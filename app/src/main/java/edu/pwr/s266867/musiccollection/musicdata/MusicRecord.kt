@@ -7,5 +7,6 @@ data class MusicRecord(
     val genre: String,
     val year: Int,
     val coverResId: Int,
+    val description: String,
     val tracks: List<MusicTrack>
 )

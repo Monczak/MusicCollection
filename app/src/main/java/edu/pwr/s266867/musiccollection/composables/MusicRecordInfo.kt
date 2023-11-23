@@ -18,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import edu.pwr.s266867.musiccollection.R
@@ -28,34 +29,62 @@ import edu.pwr.s266867.musiccollection.ui.theme.MusicCollectionTheme
 
 @Composable
 fun MusicRecordInfo(musicRecord: MusicRecord, modifier: Modifier = Modifier) {
-    Row(modifier = modifier
-        .fillMaxWidth()
-        .padding(8.dp)
-        .height(144.dp)
+    Column(
+        modifier = modifier
+            .padding(16.dp)
     ) {
-        Column {
-            Image(
-                painter = painterResource(id = musicRecord.coverResId),
-                contentDescription = null,
-                modifier = Modifier
-                    .size(144.dp)
-                    .clip(MaterialTheme.shapes.small)
-            )
-        }
-        Spacer(modifier = Modifier.width(16.dp))
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .align(alignment = Alignment.Bottom)
+        Row(modifier = Modifier
+            .fillMaxWidth()
+            .height(144.dp)
         ) {
-            Row {
-                Column {
-                    Text(text = musicRecord.title, style = MaterialTheme.typography.titleLarge)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text(text = musicRecord.artist, style = MaterialTheme.typography.titleMedium)
+            Column {
+                Image(
+                    painter = painterResource(id = musicRecord.coverResId),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(144.dp)
+                        .clip(MaterialTheme.shapes.small)
+                )
+            }
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .align(alignment = Alignment.Bottom)
+            ) {
+                Row {
+                    Column {
+                        Text(text = musicRecord.title, style = MaterialTheme.typography.titleLarge)
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(text = musicRecord.artist, style = MaterialTheme.typography.titleMedium)
+                    }
                 }
             }
         }
+        Spacer(
+            modifier = Modifier
+                .height(20.dp)
+        )
+        Column {
+            Text(
+                modifier = Modifier.padding(bottom = 16.dp),
+                text = stringResource(id = R.string.music_record_description_label),
+                style = MaterialTheme.typography.titleMedium
+            )
+            Text(
+                text = musicRecord.description,
+                style = MaterialTheme.typography.bodyMedium
+            )
+        }
+        Spacer(
+            modifier = Modifier
+                .height(20.dp)
+        )
+        Text(
+            text = stringResource(id = R.string.music_track_list_title),
+            style = MaterialTheme.typography.titleMedium
+        )
+        MusicTrackList(tracks = musicRecord.tracks)
     }
 }
 
@@ -70,6 +99,7 @@ fun MusicRecordInfoPreview() {
             "Genre",
             2000,
             R.drawable.ic_launcher_background,
+            "This is a lengthy description of this record. This record is cool. And so are its tracks. Wait, that's redundant.",
             listOf(
                 MusicTrack("Track 1", 60, listOf("Artist")),
                 MusicTrack("Track 2", 90, listOf("Artist")),

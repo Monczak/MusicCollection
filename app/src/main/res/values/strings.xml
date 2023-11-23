@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Music Collection</string>
-    <string name="title_activity_music_record_details">MusicRecordDetailsActivity</string>
+
+    <string name="music_track_list_title">Tracks</string>
+    <string name="music_record_description_label">Description</string>
+    <string name="details_screen_name">Details</string>
 </resources>

@@ -63,9 +63,9 @@ fun MusicRecordListItem(musicRecord: MusicRecord, onMusicRecordSelected: (MusicR
 fun MusicRecordListPreview() {
     MusicCollectionTheme {
         MusicRecordList(musicRecords = listOf(
-            MusicRecord(0, "Title 1", "Artist 1", "Genre 1", 2000, R.drawable.ic_launcher_background, emptyList()),
-            MusicRecord(1, "Title 2", "Artist 2", "Genre 2", 2001, R.drawable.ic_launcher_background, emptyList()),
-            MusicRecord(2, "Title 3", "Artist 3", "Genre 3", 2002, R.drawable.ic_launcher_background, emptyList()),
+            MusicRecord(0, "Title 1", "Artist 1", "Genre 1", 2000, R.drawable.ic_launcher_background, "Description 1", emptyList()),
+            MusicRecord(1, "Title 2", "Artist 2", "Genre 2", 2001, R.drawable.ic_launcher_background, "Description 2", emptyList()),
+            MusicRecord(2, "Title 3", "Artist 3", "Genre 3", 2002, R.drawable.ic_launcher_background, "Description 3", emptyList()),
         ), onMusicRecordSelected = { record -> return@MusicRecordList })
     }
 }

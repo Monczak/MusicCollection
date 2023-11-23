@@ -61,7 +61,7 @@ fun MusicCollectionNavHost(
         ) { backStackEntry ->
             val record = RecordReader.getRecordById(backStackEntry.arguments?.getInt("recordId") ?: -1)
             if (record != null)
-                DetailsScreen(musicRecord = record)
+                DetailsScreen(musicRecord = record, navController = navController)
         }
     }
 

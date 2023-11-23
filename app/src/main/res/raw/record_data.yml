@@ -3,6 +3,7 @@ artist: "Noisia"
 genre: "DnB"
 year: 2016
 coverResId: "ic_launcher_background"
+description: "This is certainly one of the DnB records ever"
 tracks:
   - name: "The Approach"
     length: "1:29"
@@ -64,6 +65,7 @@ artist: "Pat Metheny Group"
 genre: "Jazz / Fusion"
 year: 1989
 coverResId: "ic_launcher_background"
+description: "Jazzy"
 tracks:
   - name: "Have You Heard"
     length: "6:25"
@@ -107,6 +109,7 @@ artist: "System of a Down"
 genre: "Alternative Metal"
 year: 2001
 coverResId: "ic_launcher_background"
+description: "Yes"
 tracks:
   - name: "Prison Song"
     length: "3:21"

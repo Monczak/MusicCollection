@@ -48,6 +48,7 @@ object RecordReader {
         val genre = recordData["genre"] as String
         val year = recordData["year"] as Int
         val coverResId = recordData["coverResId"] as String
+        val description = recordData["description"] as String
 
         val tracks = mutableListOf<MusicTrack>()
         (recordData["tracks"] as List<*>).forEach { tData ->
@@ -62,6 +63,7 @@ object RecordReader {
             genre,
             year,
             context.resources.getIdentifier(coverResId, "drawable", context.packageName),
+            description,
             tracks
         )
     }
@@ -74,6 +76,6 @@ object RecordReader {
         val artistsList = mutableListOf<String>()
         (trackData["artists"] as List<*>).forEach { artist -> artistsList.add(artist as String) }
 
-        return MusicTrack(name, Util.parseLengthString(length), artistsList)
+        return MusicTrack(name, Util.parseTimestamp(length), artistsList)
     }
 }
