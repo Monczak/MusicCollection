@@ -54,9 +54,24 @@ fun MusicRecordInfo(musicRecord: MusicRecord, modifier: Modifier = Modifier) {
             ) {
                 Row {
                     Column {
-                        Text(text = musicRecord.title, style = MaterialTheme.typography.titleLarge)
-                        Spacer(modifier = Modifier.height(8.dp))
-                        Text(text = musicRecord.artist, style = MaterialTheme.typography.titleMedium)
+                        Text(
+                            modifier = Modifier.
+                                padding(bottom = 8.dp),
+                            text = musicRecord.title,
+                            style = MaterialTheme.typography.titleLarge
+                        )
+                        Text(
+                            modifier = Modifier.
+                                padding(bottom = 16.dp),
+                            text = musicRecord.artist,
+                            style = MaterialTheme.typography.titleMedium
+                        )
+                        Text(
+                            modifier = Modifier
+                                .padding(bottom = 8.dp),
+                            text = "${musicRecord.genre} • ${musicRecord.year}",
+                            style = MaterialTheme.typography.bodyMedium
+                        )
                     }
                 }
             }
@@ -65,26 +80,36 @@ fun MusicRecordInfo(musicRecord: MusicRecord, modifier: Modifier = Modifier) {
             modifier = Modifier
                 .height(20.dp)
         )
-        Column {
-            Text(
-                modifier = Modifier.padding(bottom = 16.dp),
-                text = stringResource(id = R.string.music_record_description_label),
-                style = MaterialTheme.typography.titleMedium
-            )
-            Text(
-                text = musicRecord.description,
-                style = MaterialTheme.typography.bodyMedium
-            )
-        }
+
+        Text(
+            modifier = Modifier.padding(bottom = 16.dp),
+            text = stringResource(id = R.string.music_record_description_label),
+            style = MaterialTheme.typography.titleMedium
+        )
+        Text(
+            text = musicRecord.description,
+            style = MaterialTheme.typography.bodyMedium
+        )
         Spacer(
             modifier = Modifier
                 .height(20.dp)
         )
+
         Text(
-            text = stringResource(id = R.string.music_track_list_title),
+            text = stringResource(id = R.string.music_track_list_label),
             style = MaterialTheme.typography.titleMedium
         )
         MusicTrackList(tracks = musicRecord.tracks)
+        Spacer(
+            modifier = Modifier
+                .height(20.dp)
+        )
+
+        Text(
+            text = stringResource(id = R.string.music_record_gallery_label),
+            style = MaterialTheme.typography.titleMedium
+        )
+        MusicRecordGallery(galleryPhotoResIds = musicRecord.galleryPhotoResIds)
     }
 }
 
@@ -104,7 +129,8 @@ fun MusicRecordInfoPreview() {
                 MusicTrack("Track 1", 60, listOf("Artist")),
                 MusicTrack("Track 2", 90, listOf("Artist")),
                 MusicTrack("Track 3", 120, listOf("Artist", "Featured Artist")),
-            )
+            ),
+            List(5) { _ -> R.drawable.ic_launcher_background }
         ))
     }
 }

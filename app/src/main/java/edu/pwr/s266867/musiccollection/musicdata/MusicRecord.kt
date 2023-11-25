@@ -8,5 +8,6 @@ data class MusicRecord(
     val year: Int,
     val coverResId: Int,
     val description: String,
-    val tracks: List<MusicTrack>
+    val tracks: List<MusicTrack>,
+    val galleryPhotoResIds: List<Int>,
 )

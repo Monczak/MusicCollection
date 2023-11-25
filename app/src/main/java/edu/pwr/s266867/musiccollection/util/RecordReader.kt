@@ -56,6 +56,12 @@ object RecordReader {
             tracks.add(track)
         }
 
+        val galleryPhotoResIds = mutableListOf<String>()
+        (recordData["gallery"] as List<*>).forEach { data ->
+            val photoResId = data as String
+            galleryPhotoResIds.add(photoResId)
+        }
+
         return MusicRecord(
             id,
             title,
@@ -64,7 +70,8 @@ object RecordReader {
             year,
             context.resources.getIdentifier(coverResId, "drawable", context.packageName),
             description,
-            tracks
+            tracks,
+            galleryPhotoResIds.map { resId -> context.resources.getIdentifier(resId, "drawable", context.packageName) }
         )
     }
 

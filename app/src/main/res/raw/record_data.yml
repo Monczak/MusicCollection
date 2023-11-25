@@ -1,9 +1,11 @@
 title: "Outer Edges"
 artist: "Noisia"
-genre: "DnB"
+genre: "Drum and Bass"
 year: 2016
-coverResId: "ic_launcher_background"
-description: "This is certainly one of the DnB records ever"
+coverResId: "cover_outeredges"
+description:
+  "Known for its innovative and experimental approach to drum and bass, the album showcases Noisia's mastery of intricate sound design,
+   heavy basslines, and genre-defying production, pushing the boundaries of electronic music."
 tracks:
   - name: "The Approach"
     length: "1:29"
@@ -59,13 +61,22 @@ tracks:
   - name: "The Approach (Reprise)"
     length: "1:59"
     artists: [ "Noisia" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
 ---
 title: "Letter from Home"
 artist: "Pat Metheny Group"
 genre: "Jazz / Fusion"
 year: 1989
-coverResId: "ic_launcher_background"
-description: "Jazzy"
+coverResId: "cover_letterfromhome"
+description:
+  "Grammy Award-winning album by jazz guitarist Pat Metheny, released in 1989. 
+  The title track, a poignant and melodic composition, reflects Metheny's signature blend of jazz, world music influences, 
+  and heartfelt storytelling, creating an evocative musical journey."
 tracks:
   - name: "Have You Heard"
     length: "6:25"
@@ -103,13 +114,22 @@ tracks:
   - name: "Letter From Home"
     length: "2:33"
     artists: [ "Pat Metheny Group" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
 ---
 title: "Toxicity"
 artist: "System of a Down"
 genre: "Alternative Metal"
 year: 2001
-coverResId: "ic_launcher_background"
-description: "Yes"
+coverResId: "cover_toxicity"
+description:
+  "Characterized by its dynamic and eclectic mix of metal, alternative rock, and experimental elements, 
+  featuring politically charged lyrics and the distinctive vocals of lead singer Serj Tankian, 
+  making it a seminal work in the alternative metal genre."
 tracks:
   - name: "Prison Song"
     length: "3:21"
@@ -156,3 +176,221 @@ tracks:
   - name: "Arto"
     length: "2:13"
     artists: [ "System of a Down" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+---
+title: "Discovery"
+artist: "Daft Punk"
+genre: "Electronic"
+year: 2001
+coverResId: "cover_discovery"
+description:
+  "Celebrated for its influential role in the development of electronic music, 
+  featuring a fusion of house, funk, and disco elements. 
+  \"Discovery\" is known for its iconic tracks such as \"One More Time\" and \"Digital Love,\" 
+  contributing to Daft Punk's legacy as pioneers in the electronic music scene."
+tracks:
+  - name: "One More Time"
+    length: "5:20"
+    artists: [ "Daft Punk" ]
+  - name: "Aerodynamic"
+    length: "3:32"
+    artists: [ "Daft Punk" ]
+  - name: "Digital Love"
+    length: "5:01"
+    artists: [ "Daft Punk" ]
+  - name: "Harder, Better, Faster, Stronger"
+    length: "3:44"
+    artists: [ "Daft Punk" ]
+  - name: "Crescendolls"
+    length: "3:31"
+    artists: [ "Daft Punk" ]
+  - name: "Nightvision"
+    length: "1:44"
+    artists: [ "Daft Punk" ]
+  - name: "Superheroes"
+    length: "3:57"
+    artists: [ "Daft Punk" ]
+  - name: "High Life"
+    length: "3:21"
+    artists: [ "Daft Punk" ]
+  - name: "Something About Us"
+    length: "3:52"
+    artists: [ "Daft Punk" ]
+  - name: "Voyager"
+    length: "3:47"
+    artists: [ "Daft Punk" ]
+  - name: "Veridis Quo"
+    length: "5:45"
+    artists: [ "Daft Punk" ]
+  - name: "Short Circuit"
+    length: "3:26"
+    artists: [ "Daft Punk" ]
+  - name: "Face to Face"
+    length: "4:00"
+    artists: [ "Daft Punk" ]
+  - name: "Too Long"
+    length: "10:00"
+    artists: [ "Daft Punk" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+---
+title: "For Lack Of A Better Name"
+artist: "deadmau5"
+genre: "Progressive House"
+year: 2009
+coverResId: "cover_forlackofabettername"
+description:
+  "Renowned for its progressive house and trance-influenced tracks, 
+  the album showcases deadmau5's signature blend of intricate melodies, pulsating rhythms, 
+  and meticulous production, solidifying his status as a leading figure in the electronic music scene."
+tracks:
+  - name: "FML"
+    length: "6:58"
+    artists: [ "deadmau5" ]
+  - name: "Moar Ghosts 'n' Stuff"
+    length: "4:59"
+    artists: [ "deadmau5" ]
+  - name: "Ghosts 'n' Stuff"
+    length: "5:28"
+    artists: [ "deadmau5", "Rob Swire" ]
+  - name: "Hi Friend"
+    length: "6:34"
+    artists: [ "deadmau5", "MC Flipside" ]
+  - name: "Bot"
+    length: "6:36"
+    artists: [ "deadmau5" ]
+  - name: "Word Problems"
+    length: "8:31"
+    artists: [ "deadmau5" ]
+  - name: "Soma"
+    length: "7:54"
+    artists: [ "deadmau5" ]
+  - name: "Lack Of A Better Name"
+    length: "8:16"
+    artists: [ "deadmau5" ]
+  - name: "The 16th Hour"
+    length: "9:55"
+    artists: [ "deadmau5" ]
+  - name: "Strobe"
+    length: "10:34"
+    artists: [ "deadmau5" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+---
+title: "Black Radio III"
+artist: "Robert Glasper"
+genre: "Hip-hop / Soul / Jazz"
+year: 2022
+coverResId: "cover_blackradio3"
+description:
+  "Black Radio III is the third installment of Robert Glasper’s acclaimed series of albums that blend 
+  jazz, hip hop, soul, and R&B. It features a star-studded lineup of guest artists who collaborate 
+  with Glasper to create a musical tribute to black culture and creativity."
+tracks:
+  - name: "In Tune"
+    length: "3:18"
+    artists: [ "Robert Glasper", "Amir Sulaiman" ]
+  - name: "Black Superhero"
+    length: "5:55"
+    artists: [ "Robert Glasper", "Killer Mike", "BJ The Chicago Kid", "Big K.R.I.T." ]
+  - name: "Shine"
+    length: "6:28"
+    artists: [ "Robert Glasper", "D Smoke", "Tiffany Gouché" ]
+  - name: "Why We Speak"
+    length: "6:19"
+    artists: [ "Robert Glasper", "Q-Tip", "Esperanza Spalding" ]
+  - name: "Over"
+    length: "4:55"
+    artists: [ "Robert Glasper", "Yebba" ]
+  - name: "Better Than I Imagined"
+    length: "4:51"
+    artists: [ "Robert Glasper", "H.E.R.", "Meshell Ndegeocello" ]
+  - name: "Everybody Wants To Rule The World"
+    length: "5:41"
+    artists: [ "Robert Glasper", "Lalah Hathaway", "Common" ]
+  - name: "Everybody Love"
+    length: "5:03"
+    artists: [ "Robert Glasper", "Musiq Soulchild" ]
+  - name: "It Don't Matter"
+    length: "5:27"
+    artists: [ "Robert Glasper", "Gregory Porter", "Ledisi" ]
+  - name: "Heaven's Here"
+    length: "3:57"
+    artists: [ "Robert Glasper", "Ant Clemons" ]
+  - name: "Out of My Hands"
+    length: "5:35"
+    artists: [ "Robert Glasper", "Jennifer Hudson" ]
+  - name: "Forever"
+    length: "5:45"
+    artists: [ "Robert Glasper", "PJ Morton", "India.Arie" ]
+  - name: "Bright Lights"
+    length: "4:02"
+    artists: [ "Robert Glasper", "Ty Dolla $ign" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+---
+title: "Ordinary Songs"
+artist: "Snail's House"
+genre: "Chillhop / Kawaii Future Bass"
+year: 2016
+coverResId: "cover_ordinarysongs"
+description:
+  "This album is a perfect example of Snail’s House’s ability to create music that is both 
+  catchy and creative. It contains 11 tracks that range from relaxing and soothing to energetic and playful."
+tracks:
+  - name: "Thinkin' Of U."
+    length: "2:25"
+    artists: [ "Snail's House" ]
+  - name: "ラ・ム・ネ"
+    length: "3:34"
+    artists: [ "Snail's House" ]
+  - name: "Cocoa"
+    length: "3:38"
+    artists: [ "Snail's House" ]
+  - name: "[Snowlight]"
+    length: "4:59"
+    artists: [ "Snail's House" ]
+  - name: "I'm Curious~<3"
+    length: "3:00"
+    artists: [ "Snail's House" ]
+  - name: "Look at Me~<3"
+    length: "3:18"
+    artists: [ "Snail's House" ]
+  - name: "La La La..."
+    length: "2:25"
+    artists: [ "Snail's House" ]
+  - name: "<3"
+    length: "3:12"
+    artists: [ "Snail's House" ]
+  - name: "Aid for Your Heart"
+    length: "2:35"
+    artists: [ "Snail's House" ]
+  - name: "It's Gonna Be Alright"
+    length: "1:25"
+    artists: [ "Snail's House" ]
+  - name: "ふかふかおふとん"
+    length: "3:41"
+    artists: [ "Snail's House" ]
+gallery:
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"
+  - "ic_launcher_background"

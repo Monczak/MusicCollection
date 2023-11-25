@@ -74,7 +74,10 @@ fun DetailsScreen(musicRecord: MusicRecord, modifier: Modifier = Modifier, navCo
                 )
         },
         content = { innerPadding ->
-            Column(modifier = modifier.verticalScroll(rememberScrollState()).padding(innerPadding)) {
+            Column(modifier = modifier
+                .verticalScroll(rememberScrollState())
+                .padding(innerPadding)
+            ) {
                 MusicRecordInfo(musicRecord = musicRecord)
             }
         }
