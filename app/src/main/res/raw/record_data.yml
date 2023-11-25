@@ -62,11 +62,10 @@ tracks:
     length: "1:59"
     artists: [ "Noisia" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "gallery_outeredges_1"
+  - "gallery_outeredges_2"
+  - "gallery_outeredges_3"
+  - "gallery_outeredges_4"
 ---
 title: "Letter from Home"
 artist: "Pat Metheny Group"
@@ -115,11 +114,11 @@ tracks:
     length: "2:33"
     artists: [ "Pat Metheny Group" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "gallery_letterfromhome_1"
+  - "gallery_letterfromhome_2"
+  - "gallery_letterfromhome_3"
+  - "gallery_letterfromhome_4"
+  - "gallery_letterfromhome_5"
 ---
 title: "Toxicity"
 artist: "System of a Down"
@@ -177,11 +176,12 @@ tracks:
     length: "2:13"
     artists: [ "System of a Down" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "gallery_toxicity_1"
+  - "gallery_toxicity_2"
+  - "gallery_toxicity_3"
+  - "gallery_toxicity_4"
+  - "gallery_toxicity_5"
+  - "gallery_toxicity_6"
 ---
 title: "Discovery"
 artist: "Daft Punk"
@@ -237,11 +237,9 @@ tracks:
     length: "10:00"
     artists: [ "Daft Punk" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "gallery_discovery_1"
+  - "gallery_discovery_2"
+  - "gallery_discovery_3"
 ---
 title: "For Lack Of A Better Name"
 artist: "deadmau5"
@@ -284,11 +282,9 @@ tracks:
     length: "10:34"
     artists: [ "deadmau5" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "gallery_forlackofabettername_1"
+  - "gallery_forlackofabettername_2"
+  - "gallery_forlackofabettername_3"
 ---
 title: "Black Radio III"
 artist: "Robert Glasper"
@@ -340,11 +336,11 @@ tracks:
     length: "4:02"
     artists: [ "Robert Glasper", "Ty Dolla $ign" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "gallery_blackradio3_1"
+  - "gallery_blackradio3_2"
+  - "gallery_blackradio3_3"
+  - "gallery_blackradio3_4"
+  - "gallery_blackradio3_5"
 ---
 title: "Ordinary Songs"
 artist: "Snail's House"
@@ -389,8 +385,12 @@ tracks:
     length: "3:41"
     artists: [ "Snail's House" ]
 gallery:
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
-  - "ic_launcher_background"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
+  - "cover_ordinarysongs"
