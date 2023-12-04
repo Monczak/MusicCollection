@@ -130,7 +130,8 @@ fun MusicRecordInfoPreview() {
                 MusicTrack("Track 2", 90, listOf("Artist")),
                 MusicTrack("Track 3", 120, listOf("Artist", "Featured Artist")),
             ),
-            List(5) { _ -> R.drawable.ic_launcher_background }
+            List(5) { _ -> R.drawable.ic_launcher_background },
+            null
         ))
     }
 }

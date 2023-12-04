@@ -10,4 +10,5 @@ data class MusicRecord(
     val description: String,
     val tracks: List<MusicTrack>,
     val galleryPhotoResIds: List<Int>,
+    val videoResId: Int?,
 )

@@ -49,6 +49,7 @@ object RecordReader {
         val year = recordData["year"] as Int
         val coverResId = recordData["coverResId"] as String
         val description = recordData["description"] as String
+        val videoResId = recordData.getOrDefault("videoResId", null) as Int?
 
         val tracks = mutableListOf<MusicTrack>()
         (recordData["tracks"] as List<*>).forEach { tData ->
@@ -71,7 +72,8 @@ object RecordReader {
             context.resources.getIdentifier(coverResId, "drawable", context.packageName),
             description,
             tracks,
-            galleryPhotoResIds.map { resId -> context.resources.getIdentifier(resId, "drawable", context.packageName) }
+            galleryPhotoResIds.map { resId -> context.resources.getIdentifier(resId, "drawable", context.packageName) },
+            videoResId
         )
     }
 
