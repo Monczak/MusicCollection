@@ -1,5 +1,6 @@
 package edu.pwr.s266867.musiccollection.composables
 
+import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -21,6 +22,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.google.common.reflect.Reflection
+import com.google.common.reflect.Reflection.getPackageName
 import edu.pwr.s266867.musiccollection.R
 import edu.pwr.s266867.musiccollection.musicdata.MusicRecord
 import edu.pwr.s266867.musiccollection.musicdata.MusicTrack
@@ -96,6 +99,7 @@ fun MusicRecordInfo(musicRecord: MusicRecord, modifier: Modifier = Modifier) {
         )
 
         Text(
+            modifier = Modifier.padding(bottom = 16.dp),
             text = stringResource(id = R.string.music_track_list_label),
             style = MaterialTheme.typography.titleMedium
         )
@@ -106,10 +110,22 @@ fun MusicRecordInfo(musicRecord: MusicRecord, modifier: Modifier = Modifier) {
         )
 
         Text(
+            modifier = Modifier.padding(bottom = 16.dp),
             text = stringResource(id = R.string.music_record_gallery_label),
             style = MaterialTheme.typography.titleMedium
         )
         MusicRecordGallery(galleryPhotoResIds = musicRecord.galleryPhotoResIds)
+        Spacer(
+            modifier = Modifier
+                .height(20.dp)
+        )
+
+        Text(
+            modifier = Modifier.padding(bottom = 16.dp),
+            text = stringResource(id = R.string.music_record_clips_label),
+            style = MaterialTheme.typography.titleMedium
+        )
+        VideoPlayer(videoUris = musicRecord.videoUris)
     }
 }
 
@@ -131,7 +147,7 @@ fun MusicRecordInfoPreview() {
                 MusicTrack("Track 3", 120, listOf("Artist", "Featured Artist")),
             ),
             List(5) { _ -> R.drawable.ic_launcher_background },
-            null
+            listOf(Uri.parse("android.resource://${getPackageName(MusicRecord::class.java)}/test.mp4"))
         ))
     }
 }

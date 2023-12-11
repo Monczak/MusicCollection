@@ -2,6 +2,7 @@ package edu.pwr.s266867.musiccollection.util
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.net.Uri
 import edu.pwr.s266867.musiccollection.R
 import edu.pwr.s266867.musiccollection.musicdata.MusicRecord
 import edu.pwr.s266867.musiccollection.musicdata.MusicTrack
@@ -37,6 +38,7 @@ object RecordReader {
         return records
     }
 
+    @SuppressLint("DiscouragedApi")
     private fun parseMusicRecordData(
         data: Any?,
         context: Context,
@@ -49,7 +51,6 @@ object RecordReader {
         val year = recordData["year"] as Int
         val coverResId = recordData["coverResId"] as String
         val description = recordData["description"] as String
-        val videoResId = recordData.getOrDefault("videoResId", null) as Int?
 
         val tracks = mutableListOf<MusicTrack>()
         (recordData["tracks"] as List<*>).forEach { tData ->
@@ -63,6 +64,12 @@ object RecordReader {
             galleryPhotoResIds.add(photoResId)
         }
 
+        val videoUris = mutableListOf<String>()
+        (recordData.getOrDefault("videoResIds", emptyList<String>()) as List<*>).forEach { data ->
+            val videoResId = data as String
+            videoUris.add(videoResId)
+        }
+
         return MusicRecord(
             id,
             title,
@@ -73,7 +80,7 @@ object RecordReader {
             description,
             tracks,
             galleryPhotoResIds.map { resId -> context.resources.getIdentifier(resId, "drawable", context.packageName) },
-            videoResId
+            videoUris.map { resId -> Uri.parse("android.resource://${context.packageName}/${context.resources.getIdentifier(resId, "raw", context.packageName)}") }
         )
     }
 

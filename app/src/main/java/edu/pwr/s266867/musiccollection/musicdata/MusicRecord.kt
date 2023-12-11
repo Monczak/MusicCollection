@@ -1,5 +1,7 @@
 package edu.pwr.s266867.musiccollection.musicdata
 
+import android.net.Uri
+
 data class MusicRecord(
     val id: Int,
     val title: String,
@@ -10,5 +12,5 @@ data class MusicRecord(
     val description: String,
     val tracks: List<MusicTrack>,
     val galleryPhotoResIds: List<Int>,
-    val videoResId: Int?,
+    val videoUris: List<Uri>,
 )

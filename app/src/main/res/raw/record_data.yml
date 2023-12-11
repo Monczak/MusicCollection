@@ -66,6 +66,10 @@ gallery:
   - "gallery_outeredges_2"
   - "gallery_outeredges_3"
   - "gallery_outeredges_4"
+videoResIds:
+  - "test"
+  - "test"
+  - "test"
 ---
 title: "Letter from Home"
 artist: "Pat Metheny Group"
