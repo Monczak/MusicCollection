@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -147,7 +148,7 @@ fun MusicRecordInfoPreview() {
                 MusicTrack("Track 3", 120, listOf("Artist", "Featured Artist")),
             ),
             List(5) { _ -> R.drawable.ic_launcher_background },
-            listOf(Uri.parse("android.resource://${getPackageName(MusicRecord::class.java)}/test.mp4"))
+            listOf(Uri.parse("android.resource://${LocalContext.current.packageName}/test.mp4"))
         ))
     }
 }
