@@ -1,6 +1,6 @@
 title: "Outer Edges"
 artist: "Noisia"
-genre: "Drum and Bass"
+genre: "Drum and Bass / Neurofunk"
 year: 2016
 coverResId: "cover_outeredges"
 description:
@@ -67,9 +67,9 @@ gallery:
   - "gallery_outeredges_3"
   - "gallery_outeredges_4"
 videoResIds:
-  - "test"
-  - "test"
-  - "test"
+  - "video_outeredges_1"
+  - "video_outeredges_2"
+  - "video_outeredges_3"
 ---
 title: "Letter from Home"
 artist: "Pat Metheny Group"
@@ -123,6 +123,8 @@ gallery:
   - "gallery_letterfromhome_3"
   - "gallery_letterfromhome_4"
   - "gallery_letterfromhome_5"
+videoResIds:
+  - "video_letterfromhome_1"
 ---
 title: "Toxicity"
 artist: "System of a Down"
@@ -186,6 +188,9 @@ gallery:
   - "gallery_toxicity_4"
   - "gallery_toxicity_5"
   - "gallery_toxicity_6"
+videoResIds:
+  - "video_toxicity_1"
+  - "video_toxicity_2"
 ---
 title: "Discovery"
 artist: "Daft Punk"

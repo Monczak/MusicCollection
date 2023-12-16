@@ -38,7 +38,6 @@ fun VideoPlayer(modifier: Modifier = Modifier, videoUris: List<Uri>) {
         ExoPlayer.Builder(context).build().apply {
             setMediaItems(mediaItems)
             prepare()
-            playWhenReady = true
             videoScalingMode = C.VIDEO_SCALING_MODE_DEFAULT
         }
     }

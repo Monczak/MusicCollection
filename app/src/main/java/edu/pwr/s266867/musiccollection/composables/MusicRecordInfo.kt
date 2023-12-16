@@ -23,8 +23,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.google.common.reflect.Reflection
-import com.google.common.reflect.Reflection.getPackageName
 import edu.pwr.s266867.musiccollection.R
 import edu.pwr.s266867.musiccollection.musicdata.MusicRecord
 import edu.pwr.s266867.musiccollection.musicdata.MusicTrack
@@ -121,12 +119,14 @@ fun MusicRecordInfo(musicRecord: MusicRecord, modifier: Modifier = Modifier) {
                 .height(20.dp)
         )
 
-        Text(
-            modifier = Modifier.padding(bottom = 16.dp),
-            text = stringResource(id = R.string.music_record_clips_label),
-            style = MaterialTheme.typography.titleMedium
-        )
-        VideoPlayer(videoUris = musicRecord.videoUris)
+        if (musicRecord.videoUris.isNotEmpty()) {
+            Text(
+                modifier = Modifier.padding(bottom = 16.dp),
+                text = stringResource(id = R.string.music_record_clips_label),
+                style = MaterialTheme.typography.titleMedium
+            )
+            VideoPlayer(videoUris = musicRecord.videoUris)
+        }
     }
 }
 
