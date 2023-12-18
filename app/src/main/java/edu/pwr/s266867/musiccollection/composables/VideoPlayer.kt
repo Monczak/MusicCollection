@@ -26,13 +26,7 @@ import edu.pwr.s266867.musiccollection.R
 @Composable
 fun VideoPlayer(modifier: Modifier = Modifier, videoUris: List<Uri>) {
     val context = LocalContext.current
-
-    val mediaItems = arrayListOf<MediaItem>()
-    videoUris.forEach {
-        mediaItems.add(
-            MediaItem.fromUri(it)
-        )
-    }
+    val mediaItems = videoUris.map { MediaItem.fromUri(it) }
 
     val exoPlayer = remember {
         ExoPlayer.Builder(context).build().apply {
@@ -42,7 +36,7 @@ fun VideoPlayer(modifier: Modifier = Modifier, videoUris: List<Uri>) {
         }
     }
 
-    Box(modifier = Modifier.fillMaxWidth().aspectRatio(16.0f / 9.0f)) {
+    Box(modifier = modifier.fillMaxWidth().aspectRatio(16.0f / 9.0f)) {
         AndroidView(
             modifier = Modifier.fillMaxSize(),
             factory = {
